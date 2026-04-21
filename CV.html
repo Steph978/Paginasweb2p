@@ -103,5 +103,118 @@
     </div>
         </header>
     </body>
+      body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-container {
+    background-color: white;
+    width: 800px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Sidebar - Color rosado de fondo */
+.sidebar {
+    width: 35%;
+    background-color: #fce4e4; /* Color similar al mármol rosa */
+    padding: 40px 20px;
+    color: #333;
+}
+
+.profile-img-container {
+    width: 180px;
+    height: 180px;
+    border: 5px solid #d4af37; /* Borde dorado */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 30px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-content h3 {
+    font-size: 1.1rem;
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.section-title-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mini-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    width: 65%;
+    padding: 40px;
+}
+
+.user-name {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Línea de tiempo vertical */
+.timeline-container {
+    border-left: 2px solid black;
+    margin-left: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-block {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* Rombos de la línea de tiempo */
+.marker {
+    position: absolute;
+    left: -41px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.timeline-block h2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.content-item h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
   </head>
 <html/>
