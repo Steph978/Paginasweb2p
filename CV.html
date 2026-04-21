@@ -1,179 +1,111 @@
-<html> 
-  <head>
-    <style>
-<title> Curriculum Vitae </title>
-      <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Stephanie Moreno Flores</title>
+    <title>CV - Stephanie Moreno Flores</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;700&display=swap" rel="stylesheet">
-      body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Configuración Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background-color: #ddd; display: flex; justify-content: center; padding: 40px 0; }
 
-.cv-container {
-    background-color: white;
-    width: 800px;
-    display: flex;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+/* Contenedor Principal */
+.cv-wrapper { width: 900px; display: flex; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.2); min-height: 1100px; }
 
-/* Sidebar - Color rosado de fondo */
-.sidebar {
-    width: 35%;
-    background-color: #fce4e4; /* Color similar al mármol rosa */
-    padding: 40px 20px;
-    color: #333;
-}
+/* Columna Izquierda (Mármol Rosa) */
+.sidebar { width: 35%; background-color: #f7e1e1; /* Color base rosado */ padding: 40px 20px; position: relative; }
+.sidebar-padding { padding: 0 15px; }
 
-.profile-img-container {
-    width: 180px;
-    height: 180px;
-    border: 5px solid #d4af37; /* Borde dorado */
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 30px;
-}
+/* Foto de Perfil */
+.profile-frame { width: 220px; height: 220px; border: 6px solid #e2c044; border-radius: 50%; overflow: hidden; margin: 0 auto 30px; background: #fff; }
+.profile-pic { width: 100%; height: 100%; object-fit: cover; }
 
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* Textos Lateral */
+.personal-skills { list-style: disc; margin-left: 20px; margin-bottom: 40px; font-size: 0.9rem; line-height: 1.4; }
+.sidebar-section { margin-bottom: 35px; }
+.section-header { display: flex; align-items: center; margin-bottom: 15px; }
+.icon { width: 30px; height: 30px; margin-right: 10px; }
+.sidebar-section h3 { font-size: 1.1rem; color: #444; }
+.sidebar-section p { font-size: 0.85rem; margin-bottom: 5px; }
+.edu-item { margin-bottom: 15px; }
+.school { font-weight: bold; }
 
-.sidebar-content h3 {
-    font-size: 1.1rem;
-    border-bottom: none;
-    margin-bottom: 10px;
-}
+/* Columna Derecha (Blanco) */
+.main-content { width: 65%; padding: 60px 40px; }
+.main-name { font-size: 2.8rem; font-weight: 300; color: #555; margin-bottom: 50px; }
 
-.section-title-icon {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
+/* Línea de Tiempo */
+.timeline { border-left: 3px solid #000; margin-left: 20px; padding-left: 40px; position: relative; }
 
-.mini-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
+.timeline-group { position: relative; margin-bottom: 50px; }
+.diamond-marker { width: 12px; height: 12px; background: #000; transform: rotate(45deg); position: absolute; left: -47.5px; top: 10px; }
+.end-marker { top: auto; bottom: -10px; }
 
-/* Main Content */
-.main-content {
-    width: 65%;
-    padding: 40px;
-}
+/* Detalles de Contenido */
+.timeline-group h2 { font-size: 1.3rem; letter-spacing: 2px; margin-bottom: 25px; }
+.job-detail h3 { font-size: 1.1rem; margin-bottom: 5px; }
+.company { margin-bottom: 10px; font-weight: bold; color: #666; }
+.course-item { margin-bottom: 15px; }
+.course-name { font-weight: bold; font-size: 0.95rem; }
+.uni { font-size: 0.85rem; color: #333; }
+ul { padding-left: 20px; }
+li { margin-bottom: 5px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
 
-.user-name {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: #555;
-    margin-bottom: 40px;
-}
-
-/* Línea de tiempo vertical */
-.timeline-container {
-    border-left: 2px solid black;
-    margin-left: 10px;
-    padding-left: 30px;
-    position: relative;
-}
-
-.timeline-block {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-/* Rombos de la línea de tiempo */
-.marker {
-    position: absolute;
-    left: -41px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    transform: rotate(45deg);
-}
-
-.timeline-block h2 {
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.content-item h3 {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-      <style/>
-    <body>
-     
-          <div class="cv-container">
+    <div class="cv-wrapper">
         <aside class="sidebar">
-            <div class="profile-img-container">
-                <img src="CV/perfil.jpg" alt="Foto de Perfil" class="profile-img">
+            <div class="profile-frame">
+                <img src="CV/perfil.jpg" alt="Stephanie Moreno" class="profile-pic">
             </div>
 
-            <div class="sidebar-content">
-                <ul class="skills-list">
+            <div class="sidebar-padding">
+                <ul class="personal-skills">
                     <li>Cuento con la capacidad para instruir a las personas</li>
                     <li>Desarrollo en habilidades físico-matemáticas</li>
                     <li>Accesibilidad para trabajar en equipo</li>
                 </ul>
 
-                <section class="contact-section">
-                    <div class="section-title-icon">
-                        <img src="CV/contacto-icon.png" alt="Icono" class="mini-icon">
+                <section class="sidebar-section">
+                    <div class="section-header">
+                        <img src="CV/icon-user.png" class="icon" alt="Contacto">
                         <h3>CONTACTO</h3>
                     </div>
                     <p><strong>Celular:</strong> 712 411 3259</p>
                     <p><strong>Correo:</strong> stephanie8002@gmail.com</p>
                 </section>
 
-                <section class="education-section">
-                    <div class="section-title-icon">
-                        <img src="CV/educacion-icon.png" alt="Icono" class="mini-icon">
+                <section class="sidebar-section">
+                    <div class="section-header">
+                        <img src="CV/icon-edu.png" class="icon" alt="Educación">
                         <h3>EDUCACIÓN</h3>
                     </div>
                     <div class="edu-item">
-                        <p class="edu-place">Instituto Cultural Canadiense</p>
-                        <p class="edu-date">2023 - 2026</p>
+                        <p class="school">Instituto Cultural Canadiense</p>
+                        <p class="year">2023 - 2026</p>
                     </div>
                     <div class="edu-item">
-                        <p class="edu-place">Escuela secundaria "Vicente Guerrero Saldaña"</p>
-                        <p class="edu-date">2020 - 2023</p>
+                        <p class="school">Escuela secundaria "Vicente Guerrero Saldaña"</p>
+                        <p class="year">2020 - 2023</p>
                     </div>
                 </section>
             </div>
         </aside>
 
         <main class="main-content">
-            <h1 class="user-name">Stephanie Moreno Flores</h1>
+            <h1 class="main-name">Stephanie Moreno Flores</h1>
 
-            <div class="timeline-container">
-                <section class="timeline-block">
-                    <div class="marker"></div>
+            <div class="timeline">
+                
+                <section class="timeline-group">
+                    <div class="diamond-marker"></div>
                     <h2>EXPERIENCIA LABORAL</h2>
-                    <div class="content-item">
+                    <div class="job-detail">
                         <h3>Vendedora en servicio al cliente</h3>
-                        <p class="sub-place">Farmacia</p>
+                        <p class="company">Farmacia</p>
                         <ul>
                             <li>Atención y asesoramiento a clientes.</li>
                             <li>Resolución de problemas.</li>
@@ -181,41 +113,39 @@ li {
                     </div>
                 </section>
 
-                <section class="timeline-block">
-                    <div class="marker"></div>
+                <section class="timeline-group">
+                    <div class="diamond-marker"></div>
                     <h2>CURSOS</h2>
-                    <div class="content-item">
+                    <div class="course-detail">
                         <h3>Coursera</h3>
-                        <ul class="courses-list">
-                            <li>
-                                <strong>Nutrición y Obesidad</strong><br>
-                                Universidad Nacional Autónoma de México
-                            </li>
-                            <li>
-                                <strong>Administración de recursos humanos</strong><br>
-                                Universidad de Palermo
-                            </li>
-                            <li>
-                                <strong>Probabilidad y Estadística</strong><br>
-                                Universidad Nacional Autónoma de México
-                            </li>
-                        </ul>
+                        <div class="course-item">
+                            <p class="course-name">Nutrición y Obesidad</p>
+                            <p class="uni">Universidad Nacional Autónoma de México</p>
+                        </div>
+                        <div class="course-item">
+                            <p class="course-name">Administración de recursos humanos</p>
+                            <p class="uni">Universidad de Palermo</p>
+                        </div>
+                        <div class="course-item">
+                            <p class="course-name">Probabilidad y Estadística</p>
+                            <p class="uni">Universidad Nacional Autónoma de México</p>
+                        </div>
                     </div>
                 </section>
 
-                <section class="timeline-block last-block">
-                    <div class="marker"></div>
+                <section class="timeline-group last-group">
+                    <div class="diamond-marker"></div>
                     <h2>IDIOMAS</h2>
-                    <ul class="simple-list">
+                    <ul class="lang-list">
                         <li>Español</li>
                         <li>Inglés</li>
                     </ul>
+                    <div class="diamond-marker end-marker"></div>
                 </section>
             </div>
         </main>
     </div>
-        </header>
-    </body>
-     
-  </head>
-<html/>
+
+</body>
+</html>
+ 
