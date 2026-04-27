@@ -56,56 +56,63 @@ li { margin-bottom: 5px; font-size: 0.9rem; }
 </head>
 <body>
 
-    <div class="cv-wrapper">
-        <aside class="sidebar">
-            <div class="profile-frame">
-                <img src="CV/perfil.jpg" alt="Stephanie Moreno" class="profile-pic">
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Stephanie Moreno Flores</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="left-panel">
+            <div class="photo-container">
+                <img src="CV/perfil.png" alt="Foto Stephanie Moreno" class="profile-photo">
             </div>
 
-            <div class="sidebar-padding">
-                <ul class="personal-skills">
+            <div class="sidebar-info">
+                <ul class="skills">
                     <li>Cuento con la capacidad para instruir a las personas</li>
                     <li>Desarrollo en habilidades físico-matemáticas</li>
                     <li>Accesibilidad para trabajar en equipo</li>
                 </ul>
 
-                <section class="sidebar-section">
-                    <div class="section-header">
-                        <img src="https://img.icons8.com/win10/1200/contacts.jpg" class="icon" alt="Contacto">
+                <div class="info-block">
+                    <div class="title-with-icon">
+                        <div class="circle-icon"><img src="CV/user.svg" alt="Icono Usuario"></div>
                         <h3>CONTACTO</h3>
                     </div>
-                    <p><strong>Celular:</strong> 712 411 3251</p>
+                    <p><strong>Celular:</strong> 712 411 3259</p>
                     <p><strong>Correo:</strong> stephanie8002@gmail.com</p>
-                </section>
+                </div>
 
-                <section class="sidebar-section">
-                    <div class="section-header">
-                        <img src="https://icones.pro/wp-content/uploads/2021/06/icone-de-l-education-noir.png" class="icon" alt="Educación">
+                <div class="info-block">
+                    <div class="title-with-icon">
+                        <div class="circle-icon"><img src="CV/grad.svg" alt="Icono Graduado"></div>
                         <h3>EDUCACIÓN</h3>
                     </div>
-                    <div class="edu-item">
-                        <p class="school">Instituto Cultural Canadiense</p>
-                        <p class="year">2023 - 2026</p>
-                    </div>
-                    <div class="edu-item">
-                        <p class="school">Escuela secundaria "Vicente Guerrero Saldaña"</p>
-                        <p class="year">2020 - 2023</p>
-                    </div>
-                </section>
+                    <p class="bold-text">Instituto Cultural Canadiense</p>
+                    <p class="date">2023 - 2026</p>
+                    <p class="bold-text">Escuela secundaria "Vicente Guerrero Saldaña"</p>
+                    <p class="date">2020 - 2023</p>
+                </div>
             </div>
         </aside>
 
-        <main class="main-content">
-            <h1 class="main-name">Stephanie Moreno Flores</h1>
+        <main class="right-panel">
+            <h1 class="full-name">Stephanie Moreno Flores</h1>
 
-            <div class="timeline">
+            <div class="timeline-wrapper">
                 
-                <section class="timeline-group">
-                    <div class="diamond-marker"></div>
+                <section class="section">
+                    <span class="diamond"></span>
                     <h2>EXPERIENCIA LABORAL</h2>
-                    <div class="job-detail">
+                    <div class="details">
                         <h3>Vendedora en servicio al cliente</h3>
-                        <p class="company">Farmacia</p>
+                        <p class="subtitle">Farmacia</p>
                         <ul>
                             <li>Atención y asesoramiento a clientes.</li>
                             <li>Resolución de problemas.</li>
@@ -113,35 +120,38 @@ li { margin-bottom: 5px; font-size: 0.9rem; }
                     </div>
                 </section>
 
-                <section class="timeline-group">
-                    <div class="diamond-marker"></div>
+                <section class="section">
+                    <span class="diamond"></span>
                     <h2>CURSOS</h2>
-                    <div class="course-detail">
+                    <div class="details">
                         <h3>Coursera</h3>
-                        <div class="course-item">
-                            <p class="course-name">Nutrición y Obesidad</p>
-                            <p class="uni">Universidad Nacional Autónoma de México</p>
+                        <div class="course">
+                            <p><strong>Nutrición y Obesidad</strong></p>
+                            <p class="institution">Universidad Nacional Autónoma de México</p>
                         </div>
-                        <div class="course-item">
-                            <p class="course-name">Administración de recursos humanos</p>
-                            <p class="uni">Universidad de Palermo</p>
+                        <div class="course">
+                            <p><strong>Administración de recursos humanos</strong></p>
+                            <p class="institution">Universidad de Palermo</p>
                         </div>
-                        <div class="course-item">
-                            <p class="course-name">Probabilidad y Estadística</p>
-                            <p class="uni">Universidad Nacional Autónoma de México</p>
+                        <div class="course">
+                            <p><strong>Probabilidad y Estadística</strong></p>
+                            <p class="institution">Universidad Nacional Autónoma de México</p>
                         </div>
                     </div>
                 </section>
 
-                <section class="timeline-group last-group">
-                    <div class="diamond-marker"></div>
+                <section class="section">
+                    <span class="diamond"></span>
                     <h2>IDIOMAS</h2>
-                    <ul class="lang-list">
-                        <li>Español</li>
-                        <li>Inglés</li>
-                    </ul>
-                    <div class="diamond-marker end-marker"></div>
+                    <div class="details">
+                        <ul class="simple-list">
+                            <li>Español</li>
+                            <li>Inglés</li>
+                        </ul>
+                    </div>
+                    <span class="diamond last-diamond"></span>
                 </section>
+
             </div>
         </main>
     </div>
